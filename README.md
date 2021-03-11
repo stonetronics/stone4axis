@@ -20,9 +20,9 @@ The cnc shield used is the generic arduino uno 4 axis cnc shield https://www.neu
 On the shield, the sockets X,Y,Z,A are used for X,Y,U,V axis
 
 Jumpers set:
-D12/A.STEP
-D13/A.DIR
-All microstepping jumpers beneath the motor drivers
+* D12/A.STEP
+* D13/A.DIR
+* All microstepping jumpers beneath the motor drivers
 
 Motors and Power are connected on the shield.
 
@@ -40,6 +40,11 @@ A signal for turning the hotwire on/off is on the "Hold" pin.
 The signal placement can easily be changed within pindef.h
 
 Defines for speed and steps/mm are in MotionProcessor.cpp
+
+### building
+Build and flash the firmware with platformIO IDE ( https://platformio.org/platformio-ide ) 
+After flashing, all functionality is available via serial gcode commans
+
 
 ### Commands available:
   + G00/G01 move
